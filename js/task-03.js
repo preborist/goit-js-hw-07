@@ -15,3 +15,16 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const galleryRef = document.querySelector('#gallery');
+const galleryItems = images.map(img => {
+  const liEl = document.createElement('li');
+  const imgEl = document.createElement('img');
+  imgEl.src = img.url;
+  imgEl.alt = img.alt;
+  imgEl.classList.add('js-gallery-style')
+  liEl.append(imgEl);
+  return liEl;
+});
+
+galleryRef.append(...galleryItems);
