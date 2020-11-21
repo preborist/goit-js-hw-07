@@ -22,7 +22,7 @@ const galleryItems = images.map(img => {
   const imgEl = document.createElement('img');
   imgEl.src = img.url;
   imgEl.alt = img.alt;
-  imgEl.classList.add('js-gallery-style')
+  imgEl.classList.add('js-gallery-style');
   liEl.append(imgEl);
   return liEl;
 });

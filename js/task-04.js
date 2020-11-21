@@ -4,7 +4,7 @@ const ref = {
   buttonDecrement: document.querySelector('[data-action="decrement"]'),
   buttonIncrement: document.querySelector('[data-action="increment"]'),
   htmlValue: document.querySelector('#value'),
-}
+};
 
 function render() {
   ref.htmlValue.textContent = counterValue;

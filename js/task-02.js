@@ -8,8 +8,8 @@ const ingredients = [
 ];
 
 const listEl = ingredients.reduce((list, el) => {
-  const ingridientEl = document.createElement('li');
-  ingridientEl.textContent = el;
+  const ingredientEl = document.createElement('li');
+  ingredientEl.textContent = el;
   list.push(ingridientEl);
   return list;
 }, []);
