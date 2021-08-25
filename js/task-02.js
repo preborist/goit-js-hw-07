@@ -10,7 +10,7 @@ const ingredients = [
 const listEl = ingredients.reduce((list, el) => {
   const ingredientEl = document.createElement('li');
   ingredientEl.textContent = el;
-  list.push(ingridientEl);
+  list.push(ingredientEl);
   return list;
 }, []);
 
